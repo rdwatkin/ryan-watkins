@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/ryan-watkins/static/css/main.8848adda.chunk.css",
+    "main.js": "/ryan-watkins/static/js/main.4c98a7b7.chunk.js",
+    "main.js.map": "/ryan-watkins/static/js/main.4c98a7b7.chunk.js.map",
+    "runtime-main.js": "/ryan-watkins/static/js/runtime-main.611472cd.js",
+    "runtime-main.js.map": "/ryan-watkins/static/js/runtime-main.611472cd.js.map",
+    "static/js/2.f6bb8db2.chunk.js": "/ryan-watkins/static/js/2.f6bb8db2.chunk.js",
+    "static/js/2.f6bb8db2.chunk.js.map": "/ryan-watkins/static/js/2.f6bb8db2.chunk.js.map",
+    "index.html": "/ryan-watkins/index.html",
+    "precache-manifest.ced78f14deefa8519a31615706f58f83.js": "/ryan-watkins/precache-manifest.ced78f14deefa8519a31615706f58f83.js",
+    "service-worker.js": "/ryan-watkins/service-worker.js",
+    "static/css/main.8848adda.chunk.css.map": "/ryan-watkins/static/css/main.8848adda.chunk.css.map",
+    "static/js/2.f6bb8db2.chunk.js.LICENSE.txt": "/ryan-watkins/static/js/2.f6bb8db2.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/ryan-watkins/static/media/clouds.2eb277d9.jpg",
+    "static/media/code-slash.svg": "/ryan-watkins/static/media/code-slash.5a69227a.svg",
+    "static/media/controller.svg": "/ryan-watkins/static/media/controller.dc2a2e16.svg",
+    "static/media/file-earmark-code.svg": "/ryan-watkins/static/media/file-earmark-code.24960db0.svg",
+    "static/media/layers.svg": "/ryan-watkins/static/media/layers.d310f521.svg",
+    "static/media/ryan.JPG": "/ryan-watkins/static/media/ryan.32bc8c9d.JPG",
+    "static/media/server.svg": "/ryan-watkins/static/media/server.c1f1cb3e.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.611472cd.js",
+    "static/js/2.f6bb8db2.chunk.js",
+    "static/css/main.8848adda.chunk.css",
+    "static/js/main.4c98a7b7.chunk.js"
+  ]
+}
