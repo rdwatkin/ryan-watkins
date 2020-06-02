@@ -4,10 +4,16 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+/* Project Tools:
+ * React
+ * Babel
+ * Jsx
+ * Bootstrap Icons
+ * React-Bootstrap
+ * React-Reveal */
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <App />,
   document.getElementById('root')
 );
 
