@@ -10,13 +10,17 @@
     background-color: rgb(255,255,244);
     border-radius: 15px;
     box-shadow: 5px 5px 10px black;
-    float: left;
+    transition: transform .4s;
 }
 
 .hex {
     height: 100px;
     position: relative;
     top: -50px;
+}
+
+.card:hover {
+    transform: scale(1.2);
 }
 
 .card h2 {
@@ -28,7 +32,8 @@
     color: rgb(44, 41, 41);
     text-transform: uppercase;
     font-family: "Montserrat", "Quicksand", sans-serif; 
-	letter-spacing: 0.2em;
+    letter-spacing: 0.2em;
+    font-weight: bolder;
 }
 
 .card p {

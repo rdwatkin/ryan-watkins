@@ -23,12 +23,14 @@ function Card(props) {
 
     return (
         <Fade left={transLeft} right={transRight} up={transUp} >
-            <div className="card" >
-                <div className="hex">
-                    <Hexagon color = {props.color} icon={icon}/>
+            <div>
+                <div className="card" >
+                    <div className="hex">
+                        <Hexagon color = {props.color} icon={icon}/>
+                    </div>
+                    <h2> {title} </h2>
+                    <p> {bodyText} </p>
                 </div>
-                <h2> {title} </h2>
-                <p> {bodyText} </p>
             </div>
         </Fade>
     );
