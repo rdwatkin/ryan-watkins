@@ -1,8 +1,8 @@
 import React from 'react';
-import HomePage from './Components/HomePage/HomePage';
-import Card from './Components/Card/Card';
+import { HomePage } from 'views/HomePage';
+import Card from './components/Card/Card';
 import Fade from 'react-reveal/Fade';
-import Experience from './Components/Experience/Experience'
+import Experience from './components/Experience/Experience'
 import {makeStyles, Box} from '@material-ui/core'
 import clouds from './assets/img/clouds.jpg'
 import {
@@ -18,6 +18,11 @@ import {
 function App() {
   const styles = makeStyles({
     app: {
+      '& a': {
+				color: 'currentColor',
+				cursor: 'pointer',
+				textDecoration: 'none'
+			},
       overflowAnchor: 'none',
       backgroundColor: '#5f45bb',
       backgroundImage: 'linear-gradient(to bottom right, #180cac, #d054e4); color: #fff',

@@ -1,10 +1,10 @@
 import React from 'react';
 import './Hexagon.css'
-import controller from '../../assets/img/controller.svg';
-import server from '../../assets/img/server.svg';
-import layers from '../../assets/img/layers.svg';
-import fileEarmark from '../../assets/img/file-earmark-code.svg';
-import codeSlash from '../../assets/img/code-slash.svg';
+import controller from 'assets/img/controller.svg';
+import server from 'assets/img/server.svg';
+import layers from 'assets/img/layers.svg';
+import fileEarmark from 'assets/img/file-earmark-code.svg';
+import codeSlash from 'assets/img/code-slash.svg';
 
 function Hexagon (props) {
 
