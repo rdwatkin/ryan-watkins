@@ -16,7 +16,11 @@ import {
 } from './assets/strings'
 
 function App() {
+
   const styles = makeStyles({
+    '& html': {
+      fontSize: '10px'
+    },
     app: {
       '& a': {
 				color: 'currentColor',
@@ -29,7 +33,7 @@ function App() {
       '-mox-osx-font-smoothing': 'grayscale',
       '-webkit-font-smoothing': 'antialiased',
       lineHeight: '1.5',
-      minWidth: '30rem',
+      minWidth: '20rem',
       overflowX: 'hidden',
       textShadow: '0 3px 5px rgba(0, 0, 0, 0.1)'
     },
@@ -61,6 +65,7 @@ function App() {
   })()
 
   return (
+
     <Box textAlign={'center'} position={'relative'} className={styles.app}>
       <Box position={'fixed'} display={'block'} height={'100%'} left={0} top={0}
            width={'100%'} className={styles.wallpaper}></Box>
@@ -72,7 +77,7 @@ function App() {
            <h2 className={styles.title}>Skills</h2>
         </Fade>
         <Box height={'100%'} display={'flex'} alignItems={'center'} 
-             justifyContent={'center'} mb={'20rem'} className={styles.list}>
+             justifyContent={'space-evenly'} mb={'20rem'} className={styles.list}>
           <Card dir="right" color="green" title="Website Development" text={webDev} icon="layers" />
           <Card dir="top" color="blue" title="Networking" text={network} icon="Server"/>
           <Card dir="left" color="orange" title="Embedded Programming" text={embedded} icon="codeSlash"/>
