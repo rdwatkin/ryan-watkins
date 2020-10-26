@@ -2,7 +2,7 @@ import React from 'react';
 import { HomePage } from 'views/HomePage';
 import Card from './components/Card/Card';
 import Fade from 'react-reveal/Fade';
-import Experience from './components/Experience/Experience'
+import Experience from './components/NewExperience/Experience'
 import {makeStyles, Box} from '@material-ui/core'
 import clouds from './assets/img/clouds.jpg'
 import {
@@ -90,10 +90,10 @@ function App() {
         <Box mt={'3rem'} height={'100%'} display={'flex'} alignItems={'center'}
              justifyContent={'center'} m={'1rem'} mb={'20rem'} 
              flexDirection={'column'}>
-          <Experience date={["Oct. 2019 -", <br/>, "Dec. 2019"]} company="University of California, Santa Cruz" position="Reader" desc={UCSC}/>
-          <Experience date={["Jul. 2019 -", <br/>, "Sep. 2019"]} company="Arista Networks" position="Software Engineering Intern" desc={arista}/>
-          <Experience date={["Jul. 2018 -", <br/>, "Sep. 2018"]} company="Gemini Design" position="Software Engineering Intern" desc={gemini}/>
-          <Experience date={["Jul. 2017 -", <br/>, "Sep. 2017"]} company="Patenaude and Felix APC" position="Information Technology Intern" desc={pt}/>
+          <Experience date={["Oct. 2019 - Dec. 2019"]} company="University of California, Santa Cruz" position="Reader" desc={UCSC}/>
+          <Experience date={["Jul. 2019 - Sep. 2019"]} company="Arista Networks" position="Software Engineering Intern" desc={arista}/>
+          <Experience date={["Jul. 2018 - Sep. 2018"]} company="Gemini Design" position="Software Engineering Intern" desc={gemini}/>
+          <Experience date={["Jul. 2017 - Sep. 2017"]} company="Patenaude and Felix APC" position="Information Technology Intern" desc={pt}/>
         </Box>
       </Box>
 
@@ -104,7 +104,7 @@ function App() {
         <Box mt={'3rem'} height={'100%'} display={'flex'} alignItems={'center'}
              justifyContent={'center'} m={'1rem'} mb={'20rem'}
              flexDirection={'column'}>
-          <Experience date={["Sep. 2016 -", <br/>, "Dec. 2019"]} company="University of California, Santa Cruz" position="Bachelor of Science" desc="Major in Computer Science. Graduated with honors. GPA: 3.52 / 4"/>
+          <Experience date={["Sep. 2016 - Dec. 2019"]} company="University of California, Santa Cruz" position="Bachelor of Science" desc="Major in Computer Science. Graduated with honors. GPA: 3.52 / 4"/>
         </Box>
       </Box>
 
