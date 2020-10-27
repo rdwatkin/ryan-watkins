@@ -51,7 +51,7 @@ function Card(props) {
             boxShadow: '5px 5px 10px black',
             transition: 'transform .4s',
             '&:hover': {
-                transform: 'scale(1.2)'
+                transform: 'scale(1.2)',
             }
         }
     })()
@@ -60,7 +60,7 @@ function Card(props) {
         <Fade left={transLeft} right={transRight} up={transUp} >
             <Box className={styles.content}>
                 <Box height={'325px'} width={'325px'} minHeight={'250px'} 
-                    minWidth={'300px'} position={'relative'} mt={'70px'}
+                    minWidth={'300px'} position={'relative'} mt={'100px'}
                     border={'1px solid black'} bgcolor={'rgb(255,255,244)'}
                     borderRadius={'15px'} className={styles.card}>
                     <Box height={'100px'} position={'relative'} top={'-50px'}>

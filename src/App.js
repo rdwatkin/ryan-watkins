@@ -1,8 +1,8 @@
 import React from 'react';
 import { HomePage } from 'views/HomePage';
-import Card from './components/Card/Card';
+import { Card } from './components/Card';
 import Fade from 'react-reveal/Fade';
-import Experience from './components/NewExperience/Experience'
+import { Experience } from './components/Experience'
 import {makeStyles, Box} from '@material-ui/core'
 import clouds from './assets/img/clouds.jpg'
 import {
@@ -77,7 +77,7 @@ function App() {
            <h2 className={styles.title}>Skills</h2>
         </Fade>
         <Box height={'100%'} display={'flex'} alignItems={'center'} 
-             justifyContent={'space-evenly'} mb={'20rem'} className={styles.list}>
+             justifyContent={'space-evenly'} mb={'10rem'} className={styles.list}>
           <Card dir="right" color="green" title="Website Development" text={webDev} icon="layers" />
           <Card dir="top" color="blue" title="Networking" text={network} icon="Server"/>
           <Card dir="left" color="orange" title="Embedded Programming" text={embedded} icon="codeSlash"/>
@@ -102,7 +102,7 @@ function App() {
             <h2 className={styles.title}>Education</h2>
           </Fade>
         <Box mt={'3rem'} height={'100%'} display={'flex'} alignItems={'center'}
-             justifyContent={'center'} m={'1rem'} mb={'20rem'}
+             justifyContent={'center'} m={'1rem'} mb={'10rem'}
              flexDirection={'column'}>
           <Experience date={["Sep. 2016 - Dec. 2019"]} company="University of California, Santa Cruz" position="Bachelor of Science" desc="Major in Computer Science. Graduated with honors. GPA: 3.52 / 4"/>
         </Box>
