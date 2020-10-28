@@ -13,6 +13,14 @@ import expandIcon from 'assets/img/chevron-expand.svg'
 
 const Experience = ({date, company, position, desc}) => {
     const styles = makeStyles({
+        root: {
+            '@media screen and (max-width: 799px)': {
+                width: '325px'
+            },
+            '@media screen and (min-width: 800px)': {
+                width: '750px'
+            }
+        },
         border: {
             boxShadow: '5px 5px 10px black',
             borderRadius: '15px'
@@ -28,21 +36,25 @@ const Experience = ({date, company, position, desc}) => {
             backgroundColor: 'rgb(178 , 226, 255)',
             marginRight: '15px',
             display: 'flex',
-            alignItems: 'center'
+            alignItems: 'center',
+            width: '90px'
         }
     })()
 
-    const accordionRoot = {
-        backgroundColor: 'rgb(0, 0, 0, 0)',
-        border: 'none',
-        borderRadius: '0px',
-        boxShadow: 'none'
+    const accordionStyles = {
+        root: {
+            backgroundColor: 'rgb(0, 0, 0, 0)',
+            border: 'none',
+            borderRadius: '0px',
+            boxShadow: 'none'
+        }
     }
 
     return (
-    <Fade up>
-    <Box width={'325px'} position={'relative'} display={'flex'}
-         flexDirection={'row'} justifyContent={'center'} p={'5px'} m={'30px'} >
+    <Fade left>
+    <Box position={'relative'} display={'flex'}
+         flexDirection={'row'} justifyContent={'center'} p={'5px'} m={'30px'}
+         className={styles.root} >
         
         <Box p={'20px'} ml={'10px'} mr={'10px'} color={'black'} 
              className={`${styles.date} ${styles.border}`}>
@@ -51,7 +63,7 @@ const Experience = ({date, company, position, desc}) => {
         
         <Box bgcolor={'rgb(255,255,244)'} display={'flex'} alignItems={'center'}
             className={styles.border}>
-            <Accordion style={accordionRoot}>
+            <Accordion style={accordionStyles.root}>
                 <AccordionSummary expandIcon={ <img src={expandIcon} alt={'expand'}/>}>
                     <Box display={'flex'} flexDirection={'column'} justifyContent={'space-evenly'}>
                         <Typography>{company}</Typography>
