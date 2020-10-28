@@ -47,16 +47,7 @@ const Experience = ({date, company, position, desc}) => {
             border: 'none',
             borderRadius: '0px',
             boxShadow: 'none'
-        },
-        content: {
-            '& :first-child': {
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center'
-            }
-            
         }
-        
     }
 
     return (
@@ -73,7 +64,7 @@ const Experience = ({date, company, position, desc}) => {
         <Box bgcolor={'rgb(255,255,244)'} display={'flex'} alignItems={'center'}
             className={styles.border}>
             <Accordion style={accordionStyles.root}>
-                <AccordionSummary expandIcon={ <img src={expandIcon} alt={'expand'}/>} style={accordionStyles.content}>
+                <AccordionSummary expandIcon={ <img src={expandIcon} alt={'expand'}/>}>
                     <Box display={'flex'} flexDirection={'column'} justifyContent={'space-evenly'}>
                         <Typography>{company}</Typography>
                         <Divider className={styles.divider}/>
