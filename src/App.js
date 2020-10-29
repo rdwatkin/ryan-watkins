@@ -1,5 +1,6 @@
 import React from 'react';
 import { HomePage } from 'views/HomePage';
+import { Snow } from 'components/Snow'
 import Fade from 'react-reveal/Fade';
 import { makeStyles, Box, ThemeProvider } from '@material-ui/core'
 import clouds from 'assets/img/clouds.jpg'
@@ -49,7 +50,9 @@ function App() {
     <ThemeProvider theme={theme} >
     <Box textAlign={'center'} position={'relative'} className={styles.app}>
       <Box position={'fixed'} display={'block'} height={'100%'} left={0} top={0}
-           width={'100%'} className={styles.wallpaper}></Box>
+           width={'100%'} className={styles.wallpaper}>
+            <Snow/>
+           </Box>
       <Fade up>
         <HomePage/>
       </Fade>
