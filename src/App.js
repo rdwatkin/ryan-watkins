@@ -7,6 +7,7 @@ import clouds from 'assets/img/clouds.jpg'
 import { theme } from 'theme'
 import { SkillsView } from 'views/SkillsView'
 import { ExperienceView } from 'views/ExperienceView'
+import { ContactView } from 'views/ContactView'
 
 function App() {
 
@@ -36,18 +37,12 @@ function App() {
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
       opacity: 0.2,
-    },
-    btn: {
-      color: 'currentColor',
-      cursor: 'pointer',
-      textDecoration: 'none',
-      position: 'relative',
-      margin: '1rem'
     }
   })()
 
   return (
     <ThemeProvider theme={theme} >
+    
     <Box textAlign={'center'} position={'relative'} className={styles.app}>
       <Box position={'fixed'} display={'block'} height={'100%'} left={0} top={0}
            width={'100%'} className={styles.wallpaper}>
@@ -59,19 +54,9 @@ function App() {
 
       <SkillsView/>
       <ExperienceView/>
-
-      <Box color={'currentColor'} mb={'2rem'} display={'flex'} 
-           alignItems={'center'} justifyContent={'center'} 
-           flexDirection={'column'}>
-        <Fade>
-          <h1 className={styles.title}>Contact</h1>
-        </Fade>
-        <Fade left>
-          <a class={styles.btn} href="https://www.linkedin.com/in/ryan-watkins-08a523126/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a class={styles.btn} href="https://github.com/rdwatkin" target="_blank" rel="noopener noreferrer">GitHub</a>
-        </Fade>
-      </Box>
+      <ContactView/>
     </Box>
+    
     </ThemeProvider>
   );
 }
