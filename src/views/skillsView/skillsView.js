@@ -6,7 +6,7 @@ import {
     embedded
 } from 'assets/strings'
 import { Fade } from 'react-reveal'
-import { Card } from 'components/Card' 
+import { Card } from 'components/card'
 
 const useStyles = makeStyles({
     list: {
