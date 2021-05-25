@@ -1,12 +1,11 @@
 import React from 'react';
-import { HomePage } from 'views/HomePage';
-import { Snow } from 'components/Snow'
+import { HomePage } from 'views/homePage';
 import Fade from 'react-reveal/Fade';
 import { makeStyles, Box, ThemeProvider } from '@material-ui/core'
 import clouds from 'assets/img/clouds.jpg'
 import { theme } from 'theme'
-import { SkillsView } from 'views/SkillsView'
-import { ExperienceView } from 'views/ExperienceView'
+import { SkillsView } from 'views/skillsView'
+import { ExperienceView } from 'views/experienceView'
 
 function App() {
 
@@ -51,8 +50,7 @@ function App() {
     <Box textAlign={'center'} position={'relative'} className={styles.app}>
       <Box position={'fixed'} display={'block'} height={'100%'} left={0} top={0}
            width={'100%'} className={styles.wallpaper}>
-            <Snow/>
-           </Box>
+      </Box>
       <Fade up>
         <HomePage/>
       </Fade>

@@ -7,7 +7,7 @@ import {
     pt
 } from 'assets/strings'
 import { Fade } from 'react-reveal'
-import { Experience } from 'components/Experience'
+import { Experience } from 'components/experience'
 
 const useStyles = makeStyles({
     title: {
