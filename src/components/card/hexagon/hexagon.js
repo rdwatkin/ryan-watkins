@@ -1,5 +1,5 @@
 import React from 'react';
-import './Hexagon.css'
+import './hexagon.css'
 import controller from 'assets/img/controller.svg';
 import server from 'assets/img/server.svg';
 import layers from 'assets/img/layers.svg';

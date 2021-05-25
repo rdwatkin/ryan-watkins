@@ -1,6 +1,6 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
-import { Hexagon } from './Hexagon'
+import { Hexagon } from './hexagon'
 import { Box, makeStyles } from '@material-ui/core'
 
 function Card(props) {
@@ -20,8 +20,6 @@ function Card(props) {
     let icon = props.icon
     let bodyText = props.text
     let title = props.title
-
-
 
     const styles = makeStyles({
         content: {
